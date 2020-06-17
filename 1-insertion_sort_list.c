@@ -1,6 +1,16 @@
 #include "sort.h"
 
 
+/**
+ * swapper - Function that swaps two elements in a list
+ *
+ * @list: List to sort
+ * @act: Element 1 to swap
+ * @nxt: Element 2 to swap
+ *
+ * Return: Location of swapped element
+ */
+
 listint_t *swapper(listint_t **list, listint_t *act, listint_t *nxt)
 {
 	if (act->prev)
@@ -20,6 +30,13 @@ listint_t *swapper(listint_t **list, listint_t *act, listint_t *nxt)
 	return (act);
 }
 
+/**
+ * insertion_sort_list - Function that sorts a list with insertion method
+ *
+ * @list: List to sort
+ *
+ * Return: 0
+ */
 
 
 void insertion_sort_list(listint_t **list)
